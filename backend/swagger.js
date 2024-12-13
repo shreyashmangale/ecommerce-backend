@@ -5,7 +5,7 @@ const doc = {
     title: 'E-Commerce Backend',
     description: 'Capstone Project Module 4'
   },
-  host: 'http://localhost:4000'
+  host: 'https://ecommerce-backend-w61s.onrender.com'
 };
 
 const outputFile = './swagger-output.json';

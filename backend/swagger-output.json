@@ -5,10 +5,9 @@
     "description": "Ecommerce Backend - Capstone Project Module 4 - API Documentation of the Project",
     "version": "1.0.0"
   },
-  "host": "localhost:4000",
+  "host": "ecommerce-backend-w61s.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http",
     "https"
   ],
   "paths": {

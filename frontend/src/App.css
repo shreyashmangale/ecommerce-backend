@@ -1,0 +1,12 @@
+.background {
+  background-image: url('../src/assets/background-img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner {
+  background-image: url('../src/assets/shopping-banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
+}

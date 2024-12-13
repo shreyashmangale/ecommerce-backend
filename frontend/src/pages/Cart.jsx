@@ -11,7 +11,7 @@ const Cart = () => {
 
   async function fetchData() {
     try {
-      const response = await fetch('https://ecommerce-backend-6egm.onrender.com/cart');
+      const response = await fetch('https://ecommerce-backend-w61s.onrender.com/cart');
       // const items =  response;
       if (!response.ok) {
         throw new Error('Network response was not ok');

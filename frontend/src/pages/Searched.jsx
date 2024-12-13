@@ -36,7 +36,7 @@ const Searched = () => {
         const fetchData = async () => {
             try {
                 setLoading(true);
-                const response = await fetch(`https://ecommerce-backend-6egm.onrender.com/search?searchedName=${searchedName}`);
+                const response = await fetch(`https://ecommerce-backend-w61s.onrender.com/search?searchedName=${searchedName}`);
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
@@ -64,8 +64,8 @@ const Searched = () => {
     useEffect(() => {
         async function fetchDataLength() {
             try {
-                const cartResponse = await fetch('https://ecommerce-backend-6egm.onrender.com/cart/cart-length');
-                const favouritesResponse = await fetch('https://ecommerce-backend-6egm.onrender.com/favourites/favourites-length');
+                const cartResponse = await fetch('https://ecommerce-backend-w61s.onrender.com/cart/cart-length');
+                const favouritesResponse = await fetch('https://ecommerce-backend-w61s.onrender.com/favourites/favourites-length');
 
                 if (!cartResponse.ok && !favouritesResponse.ok) {
                     throw new Error('Network response was not ok');
@@ -106,7 +106,7 @@ const Searched = () => {
         // console.log(newItem);
 
         try {
-            const response = await axios.post('https://ecommerce-backend-6egm.onrender.com/api/favourites', newItem);
+            const response = await axios.post('https://ecommerce-backend-w61s.onrender.com/api/favourites', newItem);
             if (response.status === 200) {
                 //console.log(response.data);
                 displayToast('success', 'favourites');
@@ -129,7 +129,7 @@ const Searched = () => {
         // console.log(newItem);
 
         try {
-            const response = await axios.post('https://ecommerce-backend-6egm.onrender.com/api/cart', newItem);
+            const response = await axios.post('https://ecommerce-backend-w61s.onrender.com/api/cart', newItem);
             if (response.status === 200) {
                 //console.log(response.data);
                 displayToast('success', 'cart');

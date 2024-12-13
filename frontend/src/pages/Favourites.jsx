@@ -10,7 +10,7 @@ const Favourites = () => {
 
   async function fetchData() {
     try {
-      const response = await fetch('https://ecommerce-backend-6egm.onrender.com/favourites');
+      const response = await fetch('https://ecommerce-backend-w61s.onrender.com/favourites');
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }

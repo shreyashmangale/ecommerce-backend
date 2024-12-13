@@ -10,13 +10,18 @@ const postFavouritesRoutes = require('./routes/post_api/postFavouritesRoutes.js'
 const searchRoutes = require('./routes/searchRoutes.js')
 
 const SwaggerUi = require('swagger-ui-express')
-const SwaggerDocument = require('./swagger-output.json')
+const SwaggerDocument = require('./swagger-output.json');
+const path = require('path');
 
 app.use(cors())
 app.use(express.json())
 
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, '../frontend/build')));
+
+//To open frontend
 app.get('/', (req, res) => {
-    res.status(200).json("Ecommerce Backend Project");
+    res.sendFile(path.join(__dirname, '../frontend/build', 'index.html'));
 })
 
 app.use('/products', productRoutes)
